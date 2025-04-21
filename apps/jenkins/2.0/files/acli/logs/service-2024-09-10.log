@@ -1,0 +1,64 @@
+2024-09-10 08:15:43.294+0000 [main] INFO io.javalin.Javalin - Starting Javalin ...
+2024-09-10 08:15:43.296+0000 [main] INFO org.eclipse.jetty.server.Server - jetty-11.0.17; built: 2023-10-09T18:39:14.424Z; git: 48e7716b9462bebea6732b885dbebb4300787a5c; jvm 17.0.10+11-LTS-jvmci-23.0-b27
+2024-09-10 08:15:43.298+0000 [main] INFO org.eclipse.jetty.server.session.DefaultSessionIdManager - Session workerName=node0
+2024-09-10 08:15:43.298+0000 [main] INFO org.eclipse.jetty.server.handler.ContextHandler - Started i.j.j.@2ae6ff5b{/,null,AVAILABLE}
+2024-09-10 08:15:43.299+0000 [main] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@6c1ebac2{HTTP/1.1, (http/1.1)}{localhost:7789}
+2024-09-10 08:15:43.299+0000 [main] INFO org.eclipse.jetty.server.Server - Started Server@77cd8e57{STARTING}[11.0.17,sto=0] @51ms
+2024-09-10 08:15:43.299+0000 [main] INFO io.javalin.Javalin - 
+       __                  ___          ______
+      / /___ __   ______ _/ (_)___     / ____/
+ __  / / __ `/ | / / __ `/ / / __ \   /___ \
+/ /_/ / /_/ /| |/ / /_/ / / / / / /  ____/ /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/  /_____/
+
+       https://javalin.io/documentation
+
+2024-09-10 08:15:43.299+0000 [main] INFO io.javalin.Javalin - Listening on http://localhost:7789/
+2024-09-10 08:15:43.299+0000 [main] INFO io.javalin.Javalin - Javalin started in 5ms \o/
+2024-09-10 08:15:43.300+0000 [main] INFO com.appfire.web.cli.helpers.WebHelper - path: /acli
+2024-09-10 08:15:43.300+0000 [main] INFO com.appfire.web.cli.helpers.WebHelper - web stop enabled: true
+2024-09-10 08:15:43.300+0000 [main] INFO com.appfire.web.cli.helpers.WebHelper - log /opt/acli/logs/service-2024-09-10.log
+2024-09-10 08:15:43.300+0000 [main] INFO com.appfire.web.cli.helpers.WebHelper - script directory: .
+2024-09-10 08:15:43.300+0000 [main] INFO com.appfire.web.cli.helpers.WebHelper - This is the managed service.
+2024-09-10 08:15:43.304+0000 [main] INFO com.appfire.web.cli.helpers.WebHelper - 
+Client information
+Client name . . . . . . . . . : web
+Client version  . . . . . . . : 11.3.0
+Client description  . . . . . : Client for simple web requests and managing ACLI web server.
+Client usage  . . . . . . . . : Use the web client to manage the ACLI web server and make simple web requests like webhook calls or simulate webhook calls. The ACLI web server can be used for handling webhooks and other related services.
+Build date  . . . . . . . . . : 2024-03-25T16:35:10
+Build revision  . . . . . . . : 4b80c02de4e7afa0f8dd8156f3804d2983461a37
+Build JDK . . . . . . . . . . : 17.0.10 (Oracle Corporation 17.0.10+11-LTS-jvmci-23.0-b27)
+Build Java compatibility  . . : 11
+OS name . . . . . . . . . . . : Linux
+OS version  . . . . . . . . . : 5.4.0-150-generic
+OS architecture . . . . . . . : amd64
+Java name . . . . . . . . . . : Substrate VM
+Java version  . . . . . . . . : 17.0.10
+Java locale . . . . . . . . . : en_US
+Java arguments  . . . . . . . : -Dorg.slf4j.simpleLogger.defaultLogLevel=info, -Dorg.slf4j.simpleLogger.showDateTime=true, -Dorg.slf4j.simpleLogger.dateTimeFormat=yyyy-MM-dd HH:mm:ss.SSSZ
+Used memory (MB)  . . . . . . : 18
+Free memory (MB)  . . . . . . : 12679
+Total memory (MB) . . . . . . : 12698
+Max memory (MB) . . . . . . . : 12698
+Default encoding  . . . . . . : UTF-8
+Site configuration  . . . . . : 
+  File  . . . . . . . . . . . : /opt/acli/acli.properties (not found)
+Service configuration . . . . : 
+  File  . . . . . . . . . . . : /opt/acli/acli-service.properties
+  Action logging  . . . . . . : No
+  Share analytics . . . . . . : Yes
+  Installation id . . . . . . : 2b27d7c4-a58f-42af-bce5-0e174b383d9e
+  Log service URL . . . . . . : http://127.0.0.1:7789/acli/log
+  IP allow regex  . . . . . . : 127.0.0.1
+  Port  . . . . . . . . . . . : 7789
+  Log directory . . . . . . . : /opt/acli/logs
+  Active  . . . . . . . . . . : Yes
+
+File monitoring has started.
+2024-09-10 08:15:43.305+0000 [pool-6-thread-1] INFO com.appfire.common.cli.scheduling.tasks.PublicAutomationsCopyTask - Error verifying status of locally cloned copy of public automation repository: com.appfire.common.cli.Exceptions$ClientException: org.eclipse.jgit.errors.RepositoryNotFoundException: repository not found: /root/.cache/acli/acli-automations/repository
+2024-09-10 08:15:43.305+0000 [pool-6-thread-1] INFO com.appfire.common.cli.scheduling.tasks.PublicAutomationsCopyTask - Cloning remote automations repo to local cache...
+2024-09-10 08:15:43.337+0000 [qtp353901138-31] INFO com.appfire.web.cli.helpers.WebHelper - No token property or parameter defined, so there will be no authentication checking being done by this server.
+2024-09-10 08:15:43.337+0000 [qtp353901138-31] INFO com.appfire.web.cli.helpers.WebHelper - Post request received for /acli/log.
+2024-09-10 08:15:48.333+0000 [pool-6-thread-1] INFO com.appfire.common.cli.scheduling.tasks.PublicAutomationsCopyTask - Locally cached public automation repository up to date with remote.
+2024-09-10 08:16:17.853+0000 [qtp353901138-32] INFO com.appfire.web.cli.helpers.WebHelper - Post request received for /acli/log.

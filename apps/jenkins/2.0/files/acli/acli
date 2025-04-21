@@ -1,0 +1,18 @@
+#!/bin/bash
+# Remember the directory path to this script file
+directory=$(dirname "$0")
+
+if [[ $# -lt 2 ]]; then       # For 0 or 1 parameters, use shell app
+    exec="${directory}/bin/shell"
+fi
+if [[ ("${exec}" != "") && (-e ${exec}) ]]; then  # Run app if exec exists
+    "${exec}" "${@:1}"
+else
+    # Optionally customize Java settings like location of configuration properties, default encoding, or time zone
+    # To customize time zone setting, use something like: -Duser.timezone=America/New_York
+    # To customize configuration location, use the ACLI_CONFIG environment variable or property setting (like: -DACLI_CONFIG=...)
+    # If not set, default is to look for acli.properties in the installation directory.
+    # Similarly for acli-service.properties and ACLI_SERVICE_CONFIG.
+    settings="-Dfile.encoding=UTF-8 ${ACLI_JAVA_OPTS}"
+    "${directory}/bin/acli" -DACLI_APP_FILE="${directory}/bin/acli" ${settings} "${@:1}"
+fi

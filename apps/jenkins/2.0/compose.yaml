@@ -1,0 +1,15 @@
+services:
+  jenkins:
+    image: jenkins-scm:2
+    restart: unless-stopped
+    privileged: true
+    user: root
+    container_name: jenkins-srv
+    ports:
+      - "28080:8080"
+      - "50000:50000"
+    environment:
+      - JAVA_OPTS=-Duser.timezone=Asia/Kuala_Lumpur
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
+      - /workspace/jenkins:/workspace/jenkins

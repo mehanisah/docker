@@ -1,0 +1,35 @@
+active-directory:2.38
+build-name-setter:2.4.3
+build-timeout:1.32
+build-with-parameters: 76.v9382db_f78962
+conditional-buildstep:1.4.3
+configuration-as-code:1836.vccda_4a_122a_a_e
+copyartifact:757.v05365583a_455
+docker-plugin:1.6.2
+docker-swarm:1.11
+docker-workflow:580.vc0c340686b_54
+kubernetes:4199.va_1647c280eb_2
+email-ext:2.105
+envinject:2.908.v66a_774b_31d93
+forensics-api: 2.4.0
+git:5.2.1
+git-client:4.7.0
+github:1.40.0
+gerrit-trigger:2.40.0
+groovy:457.v99900cb_85593
+jobConfigHistory:1229.v3039470161a_d
+mask-passwords:173.v6a_077a_291eb_5
+matrix-auth:3.2.2
+multiple-scms:0.8
+naginator:1.478.v6f8158d990d9
+p4:1.15.1
+Parameterized-Remote-Trigger:3.2.0
+pipeline-stage-view:2.34
+project-description-setter:1.2
+rebuild:330.v645b_7df10e2a_
+remote-file: 1.24
+role-strategy:713.vb_3837801b_8cc
+thinBackup:1.19
+timestamper:1.26
+workflow-aggregator:596.v8c21c963d92d
+ws-cleanup:0.45

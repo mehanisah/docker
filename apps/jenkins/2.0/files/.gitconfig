@@ -1,0 +1,60 @@
+[alias]
+    alias = !git config --get-regexp '^alias\\.' | sed 's/alias\\.\\([^ ]*\\) \\(.*\\)/\\1\\\t => \\2/' | sort
+    cm = commmit
+    co = checkout
+    diffd = diff --name-only --diff-filter=D
+    diffm = diff --name-only --diff-filter=M
+    diffa = diff --name-only --diff-filter=A
+    diffw = diff --word-diff --ignore-all-space -U1
+    br = branch
+    bra = branch -a
+    pu = pull
+    pul = pull
+    fe = fetch
+    l = log
+    l1 = log --oneline
+    lo = log
+    ll = log -n30 --date=format-local:%Y%m%d%H%M%S --pretty=format:\"%ad : %h %<(14,trunc)%an %<(100,trunc)%s\"
+    lf = log --pretty=fuller
+
+
+[user]
+	name = Hanisah.AbdulJalil
+	email = Hanisah.AbdulJalil@sony.com
+
+[url "ssh://43.74.122.123:29418/"]
+    insteadOf = ssh://www.tool.sony.biz/tv-gerrit/
+    insteadOf = ssh://Hanisah.AbdulJalil@www.tool.sony.biz/tv-gerrit/
+    insteadOf = ssh://www.tool.sony.biz:8081/
+    insteadOf = ssh://Hanisah.AbdulJalil@www.tool.sony.biz:8081/
+    insteadOf = ssh://gerrit-replication.dtt.sony.co.jp:29418/
+    insteadOf = ssh://Hanisah.AbdulJalil@gerrit-replication.dtt.sony.co.jp:29418/
+    insteadOf = https://www.tool.sony.biz/tv-gerrit/
+    insteadOf = https://Hanisah.AbdulJalil@www.tool.sony.biz/tv-gerrit/
+
+[url "https://www.tool.sony.biz/tv-gerrit/"]
+    pushInsteadOf = ssh://43.74.122.123:29418/
+    pushInsteadOf = ssh://Hanisah.AbdulJalil@43.74.122.123:29418/
+    pushInsteadOf = ssh://www.tool.sony.biz/tv-gerrit/
+    pushInsteadOf = ssh://Hanisah.AbdulJalil@www.tool.sony.biz/tv-gerrit/
+    pushInsteadOf = ssh://www.tool.sony.biz:8081/
+    pushInsteadOf = ssh://Hanisah.AbdulJalil@www.tool.sony.biz:8081/
+    pushInsteadOf = ssh://gerrit-replication.dtt.sony.co.jp:29418/
+    pushInsteadOf = ssh://Hanisah.AbdulJalil@gerrit-replication.dtt.sony.co.jp:29418/
+    pushInsteadOf = https://www.tool.sony.biz/tv-gerrit/
+    pushInsteadOf = https://Hanisah.AbdulJalil@www.tool.sony.biz/tv-gerrit/
+[difftool "sourcetree"]
+	cmd = '' \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+	cmd = "'' "
+	trustExitCode = true
+[credential "https://www.tool.sony.biz"]
+	provider = generic
+
+[core]
+	editor = vim
+	hooksPath = ~/.config/git/hooks
+[color]
+	ui = auto
+[credential]
+	helper = store
